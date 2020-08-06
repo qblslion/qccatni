@@ -9,13 +9,11 @@ enemy_final_hp = enemy_hp - my_power
 '''
 
 def game():
-    # my_hp = 1000
-    # my_power = 200
-    # your_hp = 1000
-    # your_power = 199
 
+    # 变量初始化
     my_hp = my_power = your_hp = your_power = None
 
+    # 进入设置模式，初始血量和战斗力，由用户输入自定义
     while True:
         try:
             my_hp = int(input("input my hp original value:"))
@@ -23,14 +21,13 @@ def game():
             your_hp = int(input("input your original value:"))
             your_power = int(input("input your power value:"))
 
+        #特殊字符捕捉异常
         except ValueError:
             print("Input positive int number please")
+
+        #如果输入的值都是正整数，那么设置成功，退出设置模式
         finally:
             if type(my_hp) == type(my_power) == type(your_hp) == type(your_power) == int:
-                print((my_hp > 0)==True)
-                print((my_power > 0) == True)
-                print((your_hp > 0) == True)
-                print((your_power > 0) == True)
                 if (my_hp > 0 and my_power > 0 and your_hp > 0 and your_power > 0) == True:
                     print("Set value success, go to game round!")
                     break
@@ -44,6 +41,7 @@ def game():
     # if type(my_hp) != int or type(my_power) != int:
     #     raise Exception("please input a int number")
 
+    #开始游戏循环，直到双方中的一方血量为负
     while True:
         my_hp = my_hp - your_power
         your_hp = your_hp - my_power
@@ -55,6 +53,8 @@ def game():
         elif your_hp <= 0 :
             break
 
+
+    #增加一个判断，比较大小，胜出的一方必然血量更高。这是为了处理该情况：双方血量都即将为负，所以增加此判断条件不然会陷入死循环
     if my_hp < your_hp:
         print("I lost, you win, game over")
     elif my_hp > your_hp:
