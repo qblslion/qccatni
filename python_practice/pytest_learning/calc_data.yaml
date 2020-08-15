@@ -1,8 +1,8 @@
 add:
   id:
-    - 'int'
-    - 'float'
-    - 'zero'
+    - '整数'
+    - '小数'
+    - '零'
 
   value:
     -
