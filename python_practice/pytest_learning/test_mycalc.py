@@ -29,6 +29,7 @@ pytest test_mycalc.py -vs -m "add1"
 import os
 import sys
 import traceback
+from typing import List
 
 import yaml
 import pytest
@@ -56,7 +57,10 @@ def test_get_data(t='add'):
         value = data[t]["value"]
         ids = data[t]["id"]
     return [value, ids]
-
+    # return [value],[ids]
+#
+# print(type(test_get_data()))
+# print(test_get_data())
 
 #  计算加法
 class Test_mycalc_Add:
@@ -74,6 +78,7 @@ class Test_mycalc_Add:
     def teardown(self):
         print("结束加法计算")
 
+
     # 参数直接赋值
     @pytest.mark.add1
     @pytest.mark.parametrize(
@@ -88,6 +93,7 @@ class Test_mycalc_Add:
             b = round(b, 3)
             calc_result = round(calc_result, 3)
         assert calc_result == expect
+
 
     # 参数从yaml中读取
     @pytest.mark.add2
