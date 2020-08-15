@@ -1,29 +1,3 @@
-'''
-
-    1、补全计算器（加法 除法）的测试用例
-    2、使用参数化完成测试用例的自动生成
-    3、在调用测试方法之前打印【开始计算】，在调用测试方法之后打印【计算结束】
-
-
- --notes by celia
-1.加法除法，都用了两种方法取值：
-    >@pytest.mark.parametrize 参数化直接赋值
-    >yaml文件读取值
-2.加法注意小数的处理round()
-3.除法，用了两种方法捕获异常：
-    >python自带的try except机制
-    >pytest.raises机制
-4.用了pytest三个setup/teardown对： setup_class, setup(),setup_function()[类外]
-5.os.path方法应用
-6.pytest.param(7, 8, 50, marks=pytest.mark.xfail)
-7.pytest.mark.xxx 是为想要运行的测试用例添加自定义标签，需要在.ini文件中配置一下
-然后打开命令行运行。
-比如例中我添加了add1标签，应该这样运行
-pytest test_mycalc.py -vs -m "add1"
-当然也可以在ide中运行，也可以右键test_mycalc.py文件运行整个文件里面的所有测试用例
-
-'''
-
 import os
 import sys
 import traceback
@@ -73,7 +47,6 @@ class Test_mycalc_Add:
         print("结束加法计算")
 
     # 参数直接赋值
-    @pytest.mark.add1
     @pytest.mark.parametrize(
         'a,b,expect',
         [(1, 2, 3), (0.1, 0.8, 0.9), (0, 8, 8), pytest.param(7, 8, 50, marks=pytest.mark.xfail)],
@@ -88,7 +61,6 @@ class Test_mycalc_Add:
         assert calc_result == expect
 
     # 参数从yaml中读取
-    @pytest.mark.add2
     @pytest.mark.parametrize(
         'a,b,expect',
         test_get_data()[0],
@@ -124,7 +96,6 @@ class Test_mycalc_Divide:
         print("结束除法计算")
 
     #  参数直接赋值
-    @pytest.mark.divide1
     @pytest.mark.parametrize('a,b,expect', [
         (100, 2, 50),
         (0.8, 4, 0.2),
@@ -154,7 +125,6 @@ class Test_mycalc_Divide:
             assert calc_result == expect
 
     #  参数从yaml中读取
-    @pytest.mark.divide2
     @pytest.mark.parametrize('a,b,expect',
                              test_get_data("divide")[0],
                              ids=test_get_data("divide")[1])
