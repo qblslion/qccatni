@@ -62,6 +62,9 @@ def test_get_data(t='add'):
 # print(type(test_get_data()))
 # print(test_get_data())
 
+
+
+
 #  计算加法
 class Test_mycalc_Add:
 
@@ -140,22 +143,16 @@ class Test_mycalc_Divide:
         ('test', 'hello', 1)], ids=['int', 'float', 'zero', 'str'])
     def test_divide(self, a, b, expect):
         if b == 0:
-            with pytest.raises(ZeroDivisionError) as exc_info:
+            with pytest.raises(ZeroDivisionError) as exc_info:  #  pytest.raise是报错才通过。不抛异常， 它就会报错了
                 calc_result = self.calc.divide(a, b)
-                raise ZeroDivisionError("division by zero")
-            if exc_info.type == ZeroDivisionError:
-                assert exc_info.type is ZeroDivisionError
-                assert exc_info.value.args[0] == "division by zero"
-                print(exc_info.value.args[0])
+                # raise ZeroDivisionError("division by zero")
+            # if exc_info.type == ZeroDivisionError:
+            #     assert exc_info.type is ZeroDivisionError
+            #     assert exc_info.value.args[0] == "division by zero"
 
         elif type(a) == str or type(b) == str:
             with pytest.raises(TypeError) as exc_info:
                 calc_result = self.calc.divide(a, b)
-                raise TypeError("unsupported operand type(s) for /: 'str' and 'str'")
-            if exc_info.type == TypeError:
-                assert exc_info.type is TypeError
-                assert exc_info.value.args[0] == "unsupported operand type(s) for /: 'str' and 'str'"
-                print(exc_info.value.args[0])
 
         else:
             calc_result = self.calc.divide(a, b)
