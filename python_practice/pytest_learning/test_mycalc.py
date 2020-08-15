@@ -52,13 +52,11 @@ def test_get_data():
 
 
 def test_get_data_id(t='add'):
-    # print(test_get_data()['add']['id'])
     # return test_get_data()['add']['id']
     return test_get_data()[t]['id']
 
 
 def test_get_data_value(t='add'):
-    # print(test_get_data()['add']['value'])
     # return test_get_data()['add']['value']
     return test_get_data()[t]['value']
 
@@ -170,16 +168,16 @@ class Test_mycalc_Divide:
 
     #  参数从yaml中读取
     @pytest.mark.parametrize('a,b,expect',
-        test_get_data_value("divide"),
-        ids=test_get_data_id("divide"))
-    def test_divide_yaml(self,a,b,expect):
+                             test_get_data_value("divide"),
+                             ids=test_get_data_id("divide"))
+    def test_divide_yaml(self, a, b, expect):
         try:
             if b == 0:
                 raise ZeroDivisionError
             elif type(a) == str or type(b) == str:
-                raise TypeError                     #注意，用python自带的try except机制捕捉异常的时候，如果引发异常，try结构里剩下的代码将不能执行
+                raise TypeError  # 注意，用python自带的try except机制捕捉异常的时候，如果引发异常，try结构里剩下的代码将不能执行
 
-            calc_result = self.calc.divide(a, b)    #如果引发ZeroDivisionError,TypeError异常，这两句不会执行，但是后面的except还是会走到
+            calc_result = self.calc.divide(a, b)  # 如果引发ZeroDivisionError,TypeError异常，这两句不会执行，但是后面的except还是会走到
             assert calc_result == expect
 
         except ZeroDivisionError as e:
@@ -190,6 +188,3 @@ class Test_mycalc_Divide:
             print("引发异常：", repr(e))
             # print(sys.exc_info())  #  返回一个元组，包含关于error的三个元素：type,value,object
             # print(traceback.print_exc())  #  直接打印出错误信息的value值
-
-
-
