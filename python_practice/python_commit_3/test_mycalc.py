@@ -34,7 +34,8 @@ from typing import List
 import yaml
 import pytest
 
-from python_practice.pytest_learning.mycalc import myCalc
+from python_practice.python_commit_3.mycalc import myCalc
+
 
 current_path = os.path.dirname(os.path.realpath(__file__))
 yaml_path = os.path.join(current_path, 'calc_data.yaml')
@@ -69,6 +70,7 @@ def test_get_data(t='add'):
 class Test_mycalc_Add:
 
     def setup_class(self):
+        self.calc = myCalc()
         self.calc = myCalc()
         print("I'm setup_class")
 

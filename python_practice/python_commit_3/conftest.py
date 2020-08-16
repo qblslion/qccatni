@@ -2,8 +2,8 @@ from typing import List
 
 import pytest
 
-from python_practice.pytest_learning.mycalc import myCalc
-
+# from python_practice.pytest_learning.mycalc import myCalc
+from python_practice.python_commit_3.mycalc import myCalc
 
 def pytest_collection_modifyitems(
         session: "Session", config: "Config", items: List["Item"]

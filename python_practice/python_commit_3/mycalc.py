@@ -1,4 +1,7 @@
 #  计算器类
+import os
+
+
 class myCalc:
     def __init__(self):
         pass
@@ -15,6 +18,8 @@ class myCalc:
     def divide(self, a, b):
         return a / b
 
+# print(os.path.realpath(__file__))
+# print(os.getcwd())
 
 # for item in range(1,6):
 #     print(item)
