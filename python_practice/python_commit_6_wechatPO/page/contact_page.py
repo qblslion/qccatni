@@ -17,6 +17,13 @@ class ContactPage(Base):
         pass
 
 
+    def goto_add_department_by_click_add(self):
+        # 选择所属部门直接定位self.find(By.CSS_SELECTOR,".js_parent_party_name").click()
+        # 组合定位：定位下拉框里面的元素
+        # 先定位外层dialog 再定位里面 $('.qui_dialog_body.ww_dialog_body [id="1688850284578717_anchor"]')
+        #
+        pass
+
     def get_departments_list(self):
         departments_name_list = self.finds(By.CSS_SELECTOR,'.jstree-children a')
         return [item.text for item in departments_name_list]
