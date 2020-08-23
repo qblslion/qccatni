@@ -23,3 +23,10 @@
   -- mycalc.py        计算器类
   -- test_mycalc.py   测试计算器
   -- python.ini       配置文件
+  
+  
+  --python作业4：pytest.fixture 待完善
+  
+  --python作业5：企业微信实战一
+  
+  --python作业6：page object企业微信实战二
