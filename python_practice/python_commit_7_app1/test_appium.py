@@ -13,6 +13,8 @@ self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR,
                         '.scrollable(true).instance(0))'
                         '.scrollIntoView(new UiSelector()'
                         '.text("添加成员").instance(0));').click()
+3.删除联系人小逻辑：如果搜索没有可删除联系人
+直接return 就退出整个函数 不会再执行后面的语句
 '''
 
 
