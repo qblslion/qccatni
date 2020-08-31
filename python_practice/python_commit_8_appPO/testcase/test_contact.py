@@ -3,12 +3,23 @@
 TestContact类
 测试用例类，测试添加和删除联系人，需要在每个用例里加入断言
 
+1. appium --session-override
+
+
 2.在测试用例中把一系列PO链式调用的结果传给一个变量，就可以复用driver了
+
+
+3. pytest打印logging有点问题，需要新建pytest.ini文件配置
+[pytest]
+log_cli = true
+log_cli_level = 10
+
+
 
 -2020.8.30
  by celia
 
-appium --session-override
+
 
 '''
 import pytest
