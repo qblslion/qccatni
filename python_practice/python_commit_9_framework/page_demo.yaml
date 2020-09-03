@@ -1,0 +1,32 @@
+
+# 这是一个独立的page, 有若干个行为，可以继续往里面加
+# 一旦加了之后，就可以在外层base_page解析这些内容，并且允许在case里编写它的一个实现
+
+#  这是po的定义，每个数据文件是独立的
+login:
+  - find: {id: xxx}
+  - click
+  - find: {text: xxx}
+  - send_keys: xxx #输入传递的内容
+# login读取会处理这些内容
+
+forget:
+  - find: {id: xxx}
+  - click
+
+#  定义自己的属性配置
+search:
+  - id: home_search  #  雪球主页的搜索框
+  - click: []
+#  - action: click   # 格式化，参数化
+  - id: search_input_text #  点击主页的搜索框后，进入的的新的搜索框编辑框
+#  - send_keys: alibaba  #  这里写死了，search()方法里面的keyword就不会生效，总是在搜索alibaba
+#  - send_keys: ${dog}
+  - send_keys: ${keyword}
+  - id: name # 输入alibaba后捕捉到的定位 id/name
+  - click: []
+#  - action: click
+
+back:
+  - id: action_close
+  - click: []
