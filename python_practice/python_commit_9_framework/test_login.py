@@ -10,6 +10,7 @@
 它应该是根据不同的条件 呈现不同的界面
 '''
 '''
+Reference:
 1.str.join(sequence)
 Python join() 方法用于将序列中的元素以指定的字符连接生成一个新的字符串。
 " ".join(str), join分割的必须是字符串,字符串数组和列表都可以，但是不能含有数字等
@@ -58,6 +59,8 @@ for k,v in dic1.items():
                             k,v kb 2
                             k,v kc 3
 
+-- by Celia
+      2020.9.3
 '''
 
 
