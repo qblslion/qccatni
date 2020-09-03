@@ -30,3 +30,9 @@
   --python作业5：企业微信实战一
   
   --python作业6：page object企业微信实战二
+  
+  --python作业7：appium 企业微信增删联系人
+  
+  --python作业8：appium PO 企业微信增删联系人
+  
+  --python作业9：framework与测试步骤\测试数据\PO驱动
