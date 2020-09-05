@@ -114,7 +114,9 @@ class Test_mycalc_Add:
     @pytest.mark.run(order=4)
     def test_add_yaml(self, get_calc, get_data):  # 传入fixtured的名字
         # 通过get_calc这个fixture方法能够拿到返回的calc实例
-        # 记得传入fixture方法的名字（get_calc）才可以拿到fixture的return
+        # 如果需要返回值，一定要传入fixture方法的名字
+        # 如果不需要返回值，可以不传
+        # 这里测试用例需要用到calc实例，所以记得传入fixture方法的名字（get_calc）才可以拿到fixture的return
         # calc_result = self.calc.add(a, b)
         calc_result = get_calc.add(get_data[0], get_data[1])
         assert calc_result == get_data[2]
