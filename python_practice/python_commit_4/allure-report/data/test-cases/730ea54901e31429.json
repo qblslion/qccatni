@@ -1,0 +1,121 @@
+{
+  "uid" : "730ea54901e31429",
+  "name" : "test_add[xfail]",
+  "fullName" : "test_mycalc.Test_mycalc_Add#test_add",
+  "historyId" : "3bd5a520e9628c615c81fdf9055bf175",
+  "time" : {
+    "start" : 1599305403524,
+    "stop" : 1599305403524,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "statusMessage" : "AssertionError: assert 15 == 50",
+  "statusTrace" : "self = <test_mycalc.Test_mycalc_Add object at 0x000001F5858F2D90>\nget_calc = <python_practice.python_commit_4.mycalc.myCalc object at 0x000001F585896D30>, a = 7, b = 8, expect = 50\n\n    @pytest.mark.add1\n    @pytest.mark.parametrize(\n        'a,b,expect',\n        [(1, 2, 3), (0.1, 0.8, 0.9), (0, 8, 8), pytest.param(7, 8, 50, marks=pytest.mark.xfail)],\n        ids=['int', 'float', 'zero', 'xfail']\n    )\n    @pytest.mark.run(order=5)\n    def test_add(self, get_calc, a, b, expect):\n        # calc_result = self.calc.add(a, b)\n        calc_result = get_calc.add(a, b)\n        if type(a) == float and type(b) == float:\n            a = round(a, 3)\n            b = round(b, 3)\n            calc_result = round(calc_result, 3)\n>       assert calc_result == expect\nE       assert 15 == 50\n\ntest_mycalc.py:108: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "get_calc",
+    "time" : {
+      "start" : 1599305403434,
+      "stop" : 1599305403434,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "skipped",
+    "statusMessage" : "AssertionError: assert 15 == 50",
+    "statusTrace" : "self = <test_mycalc.Test_mycalc_Add object at 0x000001F5858F2D90>\nget_calc = <python_practice.python_commit_4.mycalc.myCalc object at 0x000001F585896D30>, a = 7, b = 8, expect = 50\n\n    @pytest.mark.add1\n    @pytest.mark.parametrize(\n        'a,b,expect',\n        [(1, 2, 3), (0.1, 0.8, 0.9), (0, 8, 8), pytest.param(7, 8, 50, marks=pytest.mark.xfail)],\n        ids=['int', 'float', 'zero', 'xfail']\n    )\n    @pytest.mark.run(order=5)\n    def test_add(self, get_calc, a, b, expect):\n        # calc_result = self.calc.add(a, b)\n        calc_result = get_calc.add(a, b)\n        if type(a) == float and type(b) == float:\n            a = round(a, 3)\n            b = round(b, 3)\n            calc_result = round(calc_result, 3)\n>       assert calc_result == expect\nE       assert 15 == 50\n\ntest_mycalc.py:108: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "45ba159a80b275fd",
+      "name" : "stdout",
+      "source" : "45ba159a80b275fd.txt",
+      "type" : "text/plain",
+      "size" : 38
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "get_calc::0",
+    "time" : {
+      "start" : 1599305403620,
+      "stop" : 1599305403621,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "run(order=5)"
+  }, {
+    "name" : "tag",
+    "value" : "@pytest.mark.xfail"
+  }, {
+    "name" : "tag",
+    "value" : "add1"
+  }, {
+    "name" : "suite",
+    "value" : "test_mycalc"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_mycalc_Add"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-4KTILRS"
+  }, {
+    "name" : "thread",
+    "value" : "7788-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_mycalc"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "a",
+    "value" : "7"
+  }, {
+    "name" : "b",
+    "value" : "8"
+  }, {
+    "name" : "expect",
+    "value" : "50"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "@pytest.mark.xfail", "run(order=5)", "add1" ]
+  },
+  "source" : "730ea54901e31429.json",
+  "parameterValues" : [ "7", "8", "50" ]
+}

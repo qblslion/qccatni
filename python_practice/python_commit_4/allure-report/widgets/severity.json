@@ -1,0 +1,161 @@
+[ {
+  "uid" : "f1deda57539d0928",
+  "name" : "test_divide_yaml[零]",
+  "time" : {
+    "start" : 1599305403449,
+    "stop" : 1599305403450,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bb90493dbbd7f1f",
+  "name" : "test_1",
+  "time" : {
+    "start" : 1599305403431,
+    "stop" : 1599305403431,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e626063f7c242432",
+  "name" : "test_add[int]",
+  "time" : {
+    "start" : 1599305403500,
+    "stop" : 1599305403500,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "78ced4e7fe619390",
+  "name" : "test_divide[zero]",
+  "time" : {
+    "start" : 1599305403469,
+    "stop" : 1599305403470,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "730ea54901e31429",
+  "name" : "test_add[xfail]",
+  "time" : {
+    "start" : 1599305403524,
+    "stop" : 1599305403524,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "2b39e492a6fd47e7",
+  "name" : "test_divide_yaml[小数]",
+  "time" : {
+    "start" : 1599305403442,
+    "stop" : 1599305403443,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "deb281fd727130be",
+  "name" : "test_add[float]",
+  "time" : {
+    "start" : 1599305403509,
+    "stop" : 1599305403509,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fcd2502444af6214",
+  "name" : "test_divide[str]",
+  "time" : {
+    "start" : 1599305403476,
+    "stop" : 1599305403476,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "17085c6e61c1ba23",
+  "name" : "test_divide_yaml[整数]",
+  "time" : {
+    "start" : 1599305403435,
+    "stop" : 1599305403436,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b808f31adc5a3084",
+  "name" : "test_divide[float]",
+  "time" : {
+    "start" : 1599305403463,
+    "stop" : 1599305403464,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dce0373fdb968f18",
+  "name" : "test_add[zero]",
+  "time" : {
+    "start" : 1599305403516,
+    "stop" : 1599305403516,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2c8c856bec7ae256",
+  "name" : "test_add_yaml[小数]",
+  "time" : {
+    "start" : 1599305403487,
+    "stop" : 1599305403487,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "43f013a99960f1b1",
+  "name" : "test_a",
+  "time" : {
+    "start" : 1599305403619,
+    "stop" : 1599305403620,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "973ac61de0c8dc96",
+  "name" : "test_add_yaml[整数]",
+  "time" : {
+    "start" : 1599305403482,
+    "stop" : 1599305403482,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "23309900c5fd5fac",
+  "name" : "test_divide[int]",
+  "time" : {
+    "start" : 1599305403455,
+    "stop" : 1599305403455,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ae7eddbcf560f01b",
+  "name" : "test_add_yaml[零]",
+  "time" : {
+    "start" : 1599305403492,
+    "stop" : 1599305403492,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

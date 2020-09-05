@@ -25,7 +25,7 @@
   -- python.ini       配置文件
   
   
-  --python作业4：pytest.fixture 待完善
+  --python作业4：pytest.fixture 
   
   --python作业5：企业微信实战一
   
@@ -36,3 +36,5 @@
   --python作业8：appium PO 企业微信增删联系人
   
   --python作业9：framework与测试步骤\测试数据\PO驱动
+  
+  --python作业10

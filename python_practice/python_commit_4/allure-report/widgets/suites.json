@@ -1,0 +1,15 @@
+{
+  "total" : 1,
+  "items" : [ {
+    "uid" : "f82470a9b9541ce0f6b640411c2838b5",
+    "name" : "test_mycalc",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 15,
+      "unknown" : 0,
+      "total" : 16
+    }
+  } ]
+}

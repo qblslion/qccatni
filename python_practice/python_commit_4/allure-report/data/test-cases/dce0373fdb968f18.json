@@ -1,0 +1,114 @@
+{
+  "uid" : "dce0373fdb968f18",
+  "name" : "test_add[zero]",
+  "fullName" : "test_mycalc.Test_mycalc_Add#test_add",
+  "historyId" : "5b52e8f7859e8cbdac6b3f2888dae0c7",
+  "time" : {
+    "start" : 1599305403516,
+    "stop" : 1599305403516,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "get_calc",
+    "time" : {
+      "start" : 1599305403434,
+      "stop" : 1599305403434,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "81762a044d0dbd05",
+      "name" : "stdout",
+      "source" : "81762a044d0dbd05.txt",
+      "type" : "text/plain",
+      "size" : 38
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "get_calc::0",
+    "time" : {
+      "start" : 1599305403620,
+      "stop" : 1599305403621,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "run(order=5)"
+  }, {
+    "name" : "tag",
+    "value" : "add1"
+  }, {
+    "name" : "suite",
+    "value" : "test_mycalc"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_mycalc_Add"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-4KTILRS"
+  }, {
+    "name" : "thread",
+    "value" : "7788-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_mycalc"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "a",
+    "value" : "0"
+  }, {
+    "name" : "b",
+    "value" : "8"
+  }, {
+    "name" : "expect",
+    "value" : "8"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "run(order=5)", "add1" ]
+  },
+  "source" : "dce0373fdb968f18.json",
+  "parameterValues" : [ "0", "8", "8" ]
+}

@@ -1,0 +1,98 @@
+{
+  "uid" : "b808f31adc5a3084",
+  "name" : "test_divide[float]",
+  "fullName" : "test_mycalc.Test_mycalc_Divide#test_divide",
+  "historyId" : "5937a08ed446ddc013cfc8f2271b0cb2",
+  "time" : {
+    "start" : 1599305403463,
+    "stop" : 1599305403464,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "get_calc",
+    "time" : {
+      "start" : 1599305403434,
+      "stop" : 1599305403434,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "get_calc::0",
+    "time" : {
+      "start" : 1599305403620,
+      "stop" : 1599305403621,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "run(order=3)"
+  }, {
+    "name" : "tag",
+    "value" : "div1"
+  }, {
+    "name" : "suite",
+    "value" : "test_mycalc"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_mycalc_Divide"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-4KTILRS"
+  }, {
+    "name" : "thread",
+    "value" : "7788-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_mycalc"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "a",
+    "value" : "0.8"
+  }, {
+    "name" : "b",
+    "value" : "4"
+  }, {
+    "name" : "expect",
+    "value" : "0.2"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "run(order=3)", "div1" ]
+  },
+  "source" : "b808f31adc5a3084.json",
+  "parameterValues" : [ "0.8", "4", "0.2" ]
+}

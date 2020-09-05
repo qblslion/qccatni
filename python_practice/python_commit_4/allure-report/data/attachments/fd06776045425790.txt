@@ -1,0 +1,1 @@
+引发异常： AssertionError('assert 0.6666666666666667 == 0.5')

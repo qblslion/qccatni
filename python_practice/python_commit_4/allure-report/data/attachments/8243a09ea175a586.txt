@@ -1,0 +1,1 @@
+引发异常： AssertionError('assert 0.0 == 9')

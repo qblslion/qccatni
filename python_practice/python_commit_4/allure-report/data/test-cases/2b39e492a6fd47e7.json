@@ -1,0 +1,123 @@
+{
+  "uid" : "2b39e492a6fd47e7",
+  "name" : "test_divide_yaml[小数]",
+  "fullName" : "test_mycalc.Test_mycalc_Divide#test_divide_yaml",
+  "historyId" : "b9b4175b980ee6e564e0eec35acb266e",
+  "time" : {
+    "start" : 1599305403442,
+    "stop" : 1599305403443,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "get_calc",
+    "time" : {
+      "start" : 1599305403434,
+      "stop" : 1599305403434,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "get_data",
+    "time" : {
+      "start" : 1599305403441,
+      "stop" : 1599305403441,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "fd06776045425790",
+      "name" : "stdout",
+      "source" : "fd06776045425790.txt",
+      "type" : "text/plain",
+      "size" : 67
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "get_calc::0",
+    "time" : {
+      "start" : 1599305403620,
+      "stop" : 1599305403621,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "run(order=2)"
+  }, {
+    "name" : "tag",
+    "value" : "div2"
+  }, {
+    "name" : "suite",
+    "value" : "test_mycalc"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_mycalc_Divide"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-4KTILRS"
+  }, {
+    "name" : "thread",
+    "value" : "7788-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_mycalc"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "get_data",
+    "value" : "[0.2, 0.3, 0.5]"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "run(order=2)", "div2" ]
+  },
+  "source" : "2b39e492a6fd47e7.json",
+  "parameterValues" : [ "[0.2, 0.3, 0.5]" ]
+}

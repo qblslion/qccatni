@@ -1,0 +1,2 @@
+fixture 开始计算
+引发异常： AssertionError('assert 0.5 == 3')

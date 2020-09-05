@@ -34,7 +34,7 @@ class DemoPage(BasePage):
 
         # def po_run(self, po_method, **kwargs):  传进去一个关键字search和一个kv结构
         self.po_run("search", keyword=keyword)  #  定义命中的规则
-                                                # 传po的时候，需要在demo page里面传参数
+ #  给定一个yaml文件中曾经给定过的词search          #   传po的时候，需要在demo page里面传参数
                                                 #   当它发现带了一个参数keyword,就会完成参数的替换
         return self   #  search要返回个特定的内容，返回搜索页
 
