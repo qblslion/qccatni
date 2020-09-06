@@ -11,7 +11,6 @@ mCurrentFocus=Window{1c3c3fd u0 com.xueqiu.android/com.xueqiu.android.common.Mai
 找启动入口
 '''
 import logging
-from time import sleep
 
 import yaml
 from appium import webdriver
