@@ -9,7 +9,7 @@ class DemoPage(BasePage):
     #_search_button = (MobileBy.ID, 'home_search')
 
 
-    #to do: PO的数据驱动
+    #todo: PO的数据驱动
     def login(self, username, password):
         pass
 

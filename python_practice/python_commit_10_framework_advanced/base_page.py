@@ -104,6 +104,6 @@ class BasePage:
                                 # text.replace('{{%s}}'%k, v)
                                 text = text.replace('${' + k + '}', v)
                             self.send_keys(text)
-                        #  to do:可以不断地追加，更多关键词
+                        #  todo:可以不断地追加，更多关键词
                         else:
                             logging.error(f"dont know {step}")
