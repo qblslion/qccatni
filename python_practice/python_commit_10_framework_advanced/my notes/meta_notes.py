@@ -30,6 +30,7 @@ print(type(type))       # <class 'type'>   type 也是个type类型
 #https://www.liaoxuefeng.com/wiki/1016959663602400/1017592449371072 元类
 #https://www.liaoxuefeng.com/wiki/1016959663602400/1017451662295584 装饰器
 #https://www.liaoxuefeng.com/wiki/1016959663602400/1017594591051072 类属性和实例属性
+#https://www.jianshu.com/p/feb86c06c4f4 logger使用
 
 #https://www.jianshu.com/p/644d309b504e
 
