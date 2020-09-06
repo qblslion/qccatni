@@ -115,6 +115,6 @@ class TestLogin:
         print(keyword)
         # print(self.data)
         # print(keyword)
-        self.demo.serach(keyword)
+        self.demo.search(keyword)
 
 

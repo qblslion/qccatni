@@ -6,7 +6,6 @@ from python_practice.python_commit_10_framework_advanced.base_page import BasePa
 class DemoPage(BasePage):
 
     # 改造DemoPage,让它支持一个通用的参数，但是它继承BasePage，所以我们可以去改造BasePage让它支持接受一个参数
-
     _search_button = (MobileBy.ID, 'home_search')
 
 
@@ -23,7 +22,7 @@ class DemoPage(BasePage):
         self.po_run("back")
 
     #  完成一个search, 实现po的数据驱动
-    def serach(self, keyword):
+    def search(self, keyword):
 
         # self.find(self._search_button)   #  找到控件，如果在这后面接着click就是调用底层的方法，容易出问题
         # self.click()  #  引入一种状态，默认找到了basepage的一个基础元素，然后再去click
