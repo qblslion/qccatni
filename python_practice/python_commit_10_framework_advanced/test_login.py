@@ -45,13 +45,13 @@ class TestLogin:
         self.app.stop()
 
     # 一个参数化的用例
-    # to do:测试数据的数据驱动
+    # todo:测试数据的数据驱动
     @pytest.mark.parametrize('username, password',[
         ('user1','pwd1'),
         ('user2','pwd2')
     ])
     def test_login1(self, username, password):
-        # to do:测试步骤的数据驱动
+        # todo:测试步骤的数据驱动
         self.demo.login(username, password) # 把初始化放到以前老的case里面
         assert 1==1
 
@@ -72,6 +72,7 @@ class TestLogin:
     #注意，一旦使用了CommonPage，调用方法里面的参数就要做适应的调整
     @pytest.mark.parametrize(data['keys'], data['values'])
     def test_search_common_page(self, keyword):
+        #todo: python元编程实现python语句的数据驱动
         demo = CommonPage(self.po_file) ## 这里用了commonPage，CommonPage既没有search方法，也没有back方法，但是它会去找。CommonPage就会调用__getattr__方法，然后就会调用po_run()，其实我们就是间接地调用po_run()
         demo.search(keyword=keyword)    ## 调用了CommonPage,这里的参数就要稍微改造一下，改成keyword=keyword
         demo.back()  # 点了取消这个按钮,不是后退
