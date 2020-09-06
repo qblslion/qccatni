@@ -19,6 +19,8 @@ from appium.webdriver.webdriver import WebDriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webelement import WebElement
 
+from python_practice.python_commit_10_framework_advanced.log import log
+
 
 class BasePage:
 
@@ -78,15 +80,15 @@ class BasePage:
     # with open('page_demo.yaml',encoding='utf-8') as f: # pege_demo.yaml写死在basepage不合理
     # 一级一级往上提，提出来一个通用的东西
     def po_run(self, po_method, **kwargs):
+        log.debug(f"po_run {po_method} {kwargs}") #  打印内容： login_by_password {'username': '15600000000', 'password': '111122'}
         with open(self._po_file, encoding='utf-8') as f:
             yaml_data = yaml.safe_load(f)
             #yaml_data['search']
             for step in yaml_data[po_method]:
-                print(step)
+                # print(step)
                 if isinstance(step, dict):  #  如果这个步骤是个字典，那么就可以进行解析了
                     # id click send_keys
                     for key in step.keys():
-                        # sleep(2)
                         # if key == 'id':
                         #     locator = (By.ID, step[key])
                         #     self.find(locator)
@@ -105,38 +107,3 @@ class BasePage:
                         #  to do:可以不断地追加，更多关键词
                         else:
                             logging.error(f"dont know {step}")
-
-    #  读取
-
-        # find search
-        # find by click send_keys
-        #  pass
-'''
-
-    def po_run(self, po_method, **kwargs):
-        # read yaml
-        # logging.log.debug(f"po_run {po_method} {kwargs}")
-        with open(self._po_file, encoding='utf-8') as f:
-            yaml_data = yaml.safe_load(f)
-            # find search
-            for step in yaml_data[po_method]:
-                # find by click send_keys
-                if isinstance(step, dict):
-                    # id click send_keys
-                    for key in step.keys():
-                        if key in ['id', 'aid', 'text']:
-                            locator = (key, step[key])
-                            self.find(locator)
-
-                        elif key == 'click':
-                            self.click()
-                        elif key == 'send_keys':
-                            text = str(step[key])
-                            for k, v in kwargs.items():
-                                text = text.replace('${' + k + '}', v)
-                            self.send_keys(text)
-
-                        # todo: 更多关键词
-                        else:
-                            logging.error(f"dont know {step}")
-                            '''

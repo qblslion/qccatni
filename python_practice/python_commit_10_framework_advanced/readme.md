@@ -10,8 +10,20 @@
 > 用例里面：
 - 把需要用到的文件全写到用例里面，引入测试用例文件，并调整了相关的调用代码
 
-####改动2：代理方法
-
+####改动2：代理方法等
+>- 引入文本定位，修改了find方法和po_run方法
+>- 新增了login类，和对应的yaml文件 page_login.yaml
+>- 把BasePage start方法做了一次调整；把测试用例类里的setup_class做了一次调整
+>- 在login_page.py文件里，加了__getattr__方法和通用方法 _po_method(self, **kwargs)
+实现了方法代理
+>- 加了common_page实现通用页面的封装（其实就是把login_page.py更名为common_page.py，
+把class LoginPage 改成class CommonPage
+>- 新增了test_search_common_page测试用例，用CommonPage替代DemoPage
+>>- 之所以把LoginPage和login_page更名为common类和common_page,
+是因为实现了重构，它不再与login有关系了，而是一个通用的Page
+>>- 小tips:
+>1.用Refator可以实现类名的一键更改，无需再去工程里引用到的地方逐个手动改
+2.右键某个元素，find usage可以查看代码中哪里会使用到
 
 
 
