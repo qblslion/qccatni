@@ -5,8 +5,7 @@ from python_practice.python_commit_10_framework_advanced.base_page import BasePa
 
 class DemoPage(BasePage):
 
-    # 改造DemoPage,让它支持一个通用的参数，但是它继承BasePage，所以我们可以去改造BasePage让它支持接受一个参数
-
+    # 初始化
     _search_button = (MobileBy.ID, 'home_search')
 
 

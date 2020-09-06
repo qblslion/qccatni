@@ -1,0 +1,30 @@
+#  笛卡尔积？正交法
+#  当有多条数据，我们可以用列表，也可以用字典进行定义
+#  为test_search（）方法定制一个数据文件
+#params1:
+#  #  形式1  列表
+#  - keyword: alibaba
+#  - keyword: baidu
+#  - kewyword: jd
+
+#keyword:
+#    - alibaba
+#    - baidu
+#    - jd
+
+#params2:
+#  #  形式2  字典
+#  keyword:
+#    - alibaba
+#    - baidu
+#    - jd
+#  password:
+#    - 12345678
+#    - abcdefgh
+
+
+params:
+  #  形式2  字典
+  - keyword: alibaba
+  - keyword: baidu
+  - keyword: jd
