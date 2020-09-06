@@ -20,6 +20,8 @@ python元编程、代理模式、单例
 '''''
 
 # 验证1： type不仅仅是其他类型的元类，它也是它自己的元类
+import logging
+
 greeting="hello"
 print(type(greeting))   # <class 'str'>    "hello"是个str类型
 print(type(str))        # <class 'type'>   str 是个type类型
@@ -30,3 +32,11 @@ print(type(type))       # <class 'type'>   type 也是个type类型
 #https://www.liaoxuefeng.com/wiki/1016959663602400/1017594591051072 类属性和实例属性
 
 #https://www.jianshu.com/p/644d309b504e
+
+logging.basicConfig(
+                    format='%(asctime)s - %(filename)s[line:%(lineno)d] - %(levelname)s: %(message)s')  # logging.basicConfig函数对日志的输出格式及方式做相关配置
+logging.debug('this is a loggging debug message')
+logging.info('this is a loggging info message')
+logging.warning('this is loggging a warning message')
+logging.error('this is an loggging error message')
+logging.critical('this is a loggging critical message')

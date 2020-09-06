@@ -14,6 +14,10 @@
 >- 引入文本定位，修改了find方法和po_run方法
 >- 新增了login类，和对应的yaml文件 page_login.yaml
 >- 把BasePage start方法做了一次调整；把测试用例类里的setup_class做了一次调整
+>- 加了日志log.py类
+>>- 级别排序:CRITICAL > ERROR > WARNING > INFO > DEBUG
+默认级别顺序logging.WARNING,低于该级别的就不输出了
+改变默认级别为DEBUG：logging.basicConfig(level=logging.DEBUG)
 >- 在login_page.py文件里，加了__getattr__方法和通用方法 _po_method(self, **kwargs)
 实现了方法代理
 >- 加了common_page实现通用页面的封装（其实就是把login_page.py更名为common_page.py，
