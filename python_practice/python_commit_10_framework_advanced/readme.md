@@ -11,7 +11,6 @@
 - 把需要用到的文件全写到用例里面，引入测试用例文件，并调整了相关的调用代码
 
 ####改动2：代理方法等
-![image]https://github.com/qblslion/qccatni/blob/master/python_practice/python_commit_10_framework_advanced/my%20notes/getattr.png
 >- 引入文本定位，修改了find方法和po_run方法
 >- 新增了login类，和对应的yaml文件 page_login.yaml
 >- 把BasePage start方法做了一次调整；把测试用例类里的setup_class做了一次调整
