@@ -82,13 +82,13 @@ class TestWechat():
         #  关于浏览器复用 self.driver = webdriver.Chrome(options=option)是核心
         option = Options()  # 导入chrome对应的option
         option.debugger_address = "localhost:9222"  # 根据刚才启动的端口名填写
-        # self.driver = webdriver.Chrome(options=option)
+        self.driver = webdriver.Chrome(options=option)
 
         #  打开一个新的浏览器，不复用
         self.driver = webdriver.Chrome()
 
         # 全局隐式等待，注意：高版本selenium这句会引发bug，请下载3.141.0版本
-        self.driver.implicitly_wait(5)
+        #self.driver.implicitly_wait(5)
 
     def teardown_method(self, method):
         #  退出浏览器

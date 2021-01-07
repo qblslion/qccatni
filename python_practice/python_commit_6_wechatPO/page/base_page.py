@@ -12,6 +12,7 @@ class Base:
         if driver is None:
             #  复用浏览器，在已登录企业微信的chrome浏览器上测试
             option = Options()
+            option.add_experimental_option('w3c', False) # 对于Message: unknown command: Cannot call non W3C standard command while in W3C mode的解决方案
             option.debugger_address = "localhost:9222"
             self._driver = webdriver.Chrome(options=option)
         else:
